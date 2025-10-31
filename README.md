@@ -2,7 +2,7 @@
 ## From Tuning to Guarantees: Statistically Valid Hyperparameter Selection  
 
 This repository contains all code and notebooks for the **NeurIPS 2025 tutorial** by  
-**Amirmohammad Farzaneh** (King’s College London & University of Oxford).  
+**Amirmohammad Farzaneh** King’s College London.  
 
 The tutorial introduces a rigorous and practical framework for **statistically valid hyperparameter selection**, covering:
 - Learn-Then-Test (LTT)  
@@ -113,7 +113,7 @@ for fname in ["sample_binary_losses.csv", "sample_real_losses.csv"]:
 ## 📚 References  
 - Angelopoulos & Bates, *Learn-Then-Test* (NeurIPS 2021)  
 - Farzaneh et al., *Quantile Learn-Then-Test* (2024)  
-- **Laufer-Goldshtein, Fisch, Barzilay & Jaakkola, “Efficiently Controlling Multiple Risks with Pareto Testing,” ICLR 2023.**  
+- Laufer-Goldshtein, Fisch, Barzilay & Jaakkola, “Efficiently Controlling Multiple Risks with Pareto Testing,” ICLR 2023.  
 - Farzaneh & Simeone, *Multi-Objective Hyperparameter Selection via Hypothesis Testing on Reliability Graphs* (NeurIPS 2025)  
 - Zecchin et al., *Adaptive Learn-Then-Test* (2024)  
 - Angelopoulos et al., *Prediction-Powered Inference* (2023)
@@ -128,4 +128,4 @@ You are free to use, modify, and cite with attribution.
 
 **Maintainer:**  
 [Amirmohammad Farzaneh](https://amirfar76.github.io)  
-King’s College London · University of Oxford
+King’s College London
