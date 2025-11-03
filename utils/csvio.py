@@ -10,7 +10,7 @@ def load_losses_csv(path, id_col='hyperparam_id', loss_prefix='loss_'):
     if not loss_cols:
         loss_cols = [c for c in df.columns if c != id_col and pd.api.types.is_numeric_dtype(df[c])]
         if not loss_cols:
-            raise ValueError("No loss columns found. Use columns named loss_1, loss_2, ... or numeric columns.")
+            raise ValueError("No loss columns found. Use loss_1, loss_2, ... or numeric cols.")
     losses = df[loss_cols].to_numpy(dtype=float)
     ids = df[id_col].astype(str).to_numpy()
     return ids, losses, loss_cols
@@ -22,5 +22,4 @@ def is_binary_array(x, tol=1e-12):
 def summarize(ids, losses):
     m, n = losses.shape
     means = losses.mean(axis=1)
-    import pandas as pd
     return pd.DataFrame({'hyperparam_id': ids, 'mean_loss': means, 'n_cal': n})
